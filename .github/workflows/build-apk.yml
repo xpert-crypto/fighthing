@@ -33,7 +33,7 @@ jobs:
           chmod +x godot/Godot_v4.4.1-stable_linux.x86_64
           unzip -q godot/templates.zip -d godot/templates
           mkdir -p ~/.local/share/godot/export_templates/4.4.1.stable
-          cp -r godot/templates/. ~/.local/share/godot/export_templates/4.4.1.stable/
+          cp -r godot/templates/templates/. ~/.local/share/godot/export_templates/4.4.1.stable/
 
       - name: Import project (ETC2/ASTC)
         run: godot/Godot_v4.4.1-stable_linux.x86_64 --headless --import
