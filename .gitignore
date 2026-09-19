@@ -1,8 +1,11 @@
-# Godot
-.import/
-export.cfg
-# export_presets.cfg -> ОСТАВЛЯЕМ в репо (нужен для сборки в CI)
+# Godot 4 generated cache (machine-specific, do not commit)
+.godot/
 
-# build-артефакты
+# Generated import sidecars (regenerated on import)
+*.import
+
+# Build artifacts
 build/
 *.apk
+
+# NOTE: export_presets.cfg and project.godot are kept in the repo (needed for CI build)
