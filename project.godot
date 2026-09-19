@@ -1,15 +1,23 @@
 ; Engine configuration file.
 ; It's best edited using the editor UI and not directly,
-; since the parameters that go here are not all obvious.
+; since the parameters in here are not all obvious.
 
 [application]
-name="FalkoMent"
+name="Falko vs Ment"
 run/main_scene="res://Scenes/Main.tscn"
-config/features=PackedStringArray("4.4")
-config/icon="res://Characters/Falko/Sprites/idle.png"
+config/features=PackedStringArray("4.4", "Mobile")
+config/icon="res://icon.svg"
+boot_splash/bg_color=Color(0.1, 0.1, 0.1, 1)
+
+[display]
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="canvas_items"
 
 [rendering]
-
+renderer/rendering_method="gl_compatibility"
+renderer/environment/defaults/default_clear_color=Color(0.2, 0.4, 0.6, 1)
+; Required for Android export (Godot 4.4): without ETC2/ASTC the Android preset fails to build.
 textures/vram_compression/import_etc2_astc=true
 
 [autoload]
